@@ -6,13 +6,19 @@
           $(document).ready(function(){
                $("button").click(function(){
                     $.post("http://169.232.87.55:50/Play",{
-                              name: "Donald Duck",
-                              city: "Duckburg"
+                              a: "hello",
+                              b: "world"
                          },
                          function(data, status){
                               alert("Data: " + data + "\nStatus: " + status);
                     });
-                    //$.post("http://169.232.86.107:50/Play");
+                    $.post("http://169.232.86.107:50/Play",{
+                              a: "hello",
+                              b: "world"
+                         },
+                         function(data, status){
+                              alert("Data: " + data + "\nStatus: " + status);
+                    });
                });
           });
           
