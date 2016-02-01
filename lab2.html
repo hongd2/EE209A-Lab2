@@ -5,10 +5,18 @@
      <script>
           $(document).ready(function(){
                $("button").click(function(){
-                    $.get("http://169.232.87.55:50/Play");
-                    $.get("http://169.232.86.107:50/Play");
+                    $.post("http://169.232.87.55:50/Play");
+                    $.post("http://169.232.86.107:50/Play");
                });
           });
+          $.ajax({
+               type: "POST",
+               url: "http://169.232.87.55:50/Play",
+               data: {a:1, b:2},
+               success: function(data){ console.log(data); },
+               error: function(e){ console.log(e);},
+          dataType: dataType
+});
      </script>
 </head>
 <body>
