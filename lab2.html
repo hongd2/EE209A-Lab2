@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
 <body>
+     <script>
+          $(document).ready(function(){
+               $("button").click(function(){
+                    $.post("http://169.232.87.55:50/Play")
+                    $.post("http://169.232.86.107:50/Play")
+               });
+          });
+     </script>
      <form action="http://169.232.87.55:50/Play", method="GET">
      <input type="submit" value="Click to Play">
      </form>
