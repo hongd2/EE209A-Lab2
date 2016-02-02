@@ -4,9 +4,13 @@
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
      <script>
           $(document).ready(function(){
-               $("#Play").click(function(){
+               $("#Play1").click(function(){
                     $.get("http://169.232.86.124:50/Play1");
 					$.get("http://169.232.87.9:50/ServoBeats1");
+               });
+			   $("#Play2").click(function(){
+					$.get("http://169.232.86.124:50/Play2");
+					$.get("http://169.232.87.9:50/ServoBeats2");
                });
                $("#Stop").click(function(){
                     $.get("http://169.232.86.124:50/Stop");
@@ -20,7 +24,8 @@
 
 </head>
 <body>
-     <button id="Play">Play</button><br>
+     <button id="Play">Play1</button><br>
+	 <button id="Play">Play2</button><br>
      <button id="Stop">Stop</button>
 </body>
 </html>
