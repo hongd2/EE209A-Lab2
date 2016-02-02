@@ -1,8 +1,26 @@
 <!DOCTYPE html>
 <html>
+<head>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+     <script>
+          $(document).ready(function(){
+               $("#Play").click(function(){
+                    $.get("http://131.179.56.175:50/Play1");
+                    //$.get("http://169.232.86.107:50/Play");
+               });
+               $("#Stop").click(function(){
+                    $.get("http://131.179.56.175:50/Stop");
+                    //$.get("http://169.232.86.107:50/Play");
+               });
+          });
+          
+     </script>
+    
+    
+
+</head>
 <body>
-    <form action="169.232.87.55:50/Play">
-    <input type="submit" value="Click to Play">
-</form>
+     <button id="Play">Play</button><br>
+     <button id="Stop">Stop</button>
 </body>
 </html>
