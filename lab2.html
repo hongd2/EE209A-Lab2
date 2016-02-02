@@ -30,6 +30,12 @@
                 $.get("http://"+ip1+"/SpeedDown");
 				$.get("http://"+ip2+"/SpeedDown");
             });
+			$("#VolumeUp").click(function(){
+				$.get("http://"+ip1+"/VolumeUp");
+            });
+			$("#VolumeDown").click(function(){
+                $.get("http://"+ip1+"/VolumeDown");
+            });
             $("#Stop").click(function(){
                 $.get("http://"+ip1+"/Stop");
 				$.get("http://"+ip2+"/Stop");					
@@ -48,6 +54,8 @@
 	 <button id="Pause">Pause</button><br>
 	 <button id="SpeedUp">Speed Up</button><br>
 	 <button id="SpeedDown">Speed Down</button><br>
+	 <button id="VolumeUp">Volume Up</button><br>
+	 <button id="VolumeDown">Volume Down</button><br>
      <button id="Stop">Stop</button>
 </body>
 </html>
