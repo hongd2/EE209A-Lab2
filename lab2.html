@@ -3,8 +3,8 @@
 <head>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
      <script>
-		var ip1="169.232.86.124:50";
-		var ip2="169.232.87.9:50";
+		var ip1="169.232.86.124:50"; //buzzer
+		var ip2="169.232.87.9:50"; //servo
         $(document).ready(function(){
             $("#Play1").click(function(){
                 $.get("http://"+ip1+"/Play1");
@@ -17,6 +17,18 @@
 			$("#Play3").click(function(){
                 $.get("http://"+ip1+"/Play3");
 				$.get("http://"+ip2+"/ServoBeats3");
+            });
+			$("#Pause").click(function(){
+                $.get("http://"+ip1+"/Pause");
+				$.get("http://"+ip2+"/Pause");
+            });
+			$("#SpeedUp").click(function(){
+				$.get("http://"+ip1+"/SpeedUp");
+				$.get("http://"+ip2+"/SpeedUp");
+            });
+			$("#SpeedDown").click(function(){
+                $.get("http://"+ip1+"/SpeedDown");
+				$.get("http://"+ip2+"/SpeedDown");
             });
             $("#Stop").click(function(){
                 $.get("http://"+ip1+"/Stop");
@@ -33,6 +45,9 @@
      <button id="Play1">Play 1</button><br>
 	 <button id="Play2">Play 2</button><br>
 	 <button id="Play3">Play 3</button><br>
+	 <button id="Pause">Pause</button><br>
+	 <button id="SpeedUp">Speed Up</button><br>
+	 <button id="SpeedDown">Speed Down</button><br>
      <button id="Stop">Stop</button>
 </body>
 </html>
