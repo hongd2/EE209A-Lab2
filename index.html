@@ -5,8 +5,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	
 	<script>
-		var ip1="169.232.86.124:50"; //buzzer
-		var ip2="169.232.87.9:50"; //servo
+		<!-- buzzer -->
+		var ip1="169.232.86.124:50";
+		<!-- servo -->
+		var ip2="169.232.87.9:50";
         $(document).ready(function(){
             $("#Play1").click(function(){
                 $.get("http://"+ip1+"/Play1");
@@ -152,10 +154,10 @@
                                 <i class="fa fa-cloud fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
-                                    <strong>Service Name</strong>
+                                    <strong>Song of Secret Garden</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <p>Secret Garden</p>
+                                <a id="Play2" class="btn btn-light">Play</a>
                             </div>
                         </div>
 						<div class="col-md-3 col-sm-6">
