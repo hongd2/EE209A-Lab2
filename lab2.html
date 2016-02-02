@@ -3,23 +3,25 @@
 <head>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
      <script>
-          $(document).ready(function(){
-               $("#Play1").click(function(){
-                    $.get("http://169.232.86.124:50/Play1");
-					$.get("http://169.232.87.9:50/ServoBeats1");
-               });
-			   $("#Play2").click(function(){
-					$.get("http://169.232.86.124:50/Play2");
-					$.get("http://169.232.87.9:50/ServoBeats2");
-               });
-			   $("#Play3").click(function(){
-                    $.get("http://169.232.86.124:50/Play3");
-					$.get("http://169.232.87.9:50/ServoBeats3");
-               });
-               $("#Stop").click(function(){
-                    $.get("http://169.232.86.124:50/Stop");
-					$.get("http://169.232.87.9:50/Stop");					
-               });
+		var ip1="169.232.86.124:50";
+		var ip2="169.232.87.9:50";
+        $(document).ready(function(){
+            $("#Play1").click(function(){
+                $.get("http://"+ip1+"/Play1");
+				$.get("http://"+ip2+"/ServoBeats1");
+            });
+			$("#Play2").click(function(){
+				$.get("http://"+ip1+"/Play2");
+				$.get("http://"+ip2+"/ServoBeats2");
+            });
+			$("#Play3").click(function(){
+                $.get("http://"+ip1+"/Play3");
+				$.get("http://"+ip2+"/ServoBeats3");
+            });
+            $("#Stop").click(function(){
+                $.get("http://"+ip1+"/Stop");
+				$.get("http://"+ip2+"/Stop");					
+            });
           });
           
      </script>
