@@ -12,6 +12,10 @@
 					$.get("http://169.232.86.124:50/Play2");
 					$.get("http://169.232.87.9:50/ServoBeats2");
                });
+			   $("#Play3").click(function(){
+                    $.get("http://169.232.86.124:50/Play3");
+					$.get("http://169.232.87.9:50/ServoBeats3");
+               });
                $("#Stop").click(function(){
                     $.get("http://169.232.86.124:50/Stop");
 					$.get("http://169.232.87.9:50/Stop");					
@@ -26,6 +30,7 @@
 <body>
      <button id="Play1">Play 1</button><br>
 	 <button id="Play2">Play 2</button><br>
+	 <button id="Play3">Play 3</button><br>
      <button id="Stop">Stop</button>
 </body>
 </html>
